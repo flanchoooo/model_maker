@@ -48,4 +48,5 @@ Route::POST('/drop_expenses', 'DropExpenseController@index');
 Route::POST('/drop_expenses/destroy{id}', 'DropExpenseController@destroy');
 Route::POST('/business', 'BusinessController@index')->name('business');
 Route::get('/businesses', 'BusinessesController@index')->name('businesses');
-Route::get('/charts', 'ChartController@index')->name('charts');
+Route::POST('/charts', 'ChartController@index')->name('charts');
+Route::get('/chart', 'ChartSplitterController@index')->name('chart');

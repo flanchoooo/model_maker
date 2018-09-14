@@ -56,7 +56,7 @@
 
                                     <form role="form" action="edit_input" method="POST">
                                         @csrf
-                                        <input type="hidden" class="form-control"  placeholder="Company Name" value="{{$values->month}}"  name="id" >
+                                        <input type="hidden" class="form-control"  placeholder="Company Name" value="{{$values->id}}"  name="id" >
                                         <button type="submit" class="btn btn-warning"><i class="fa fa-pencil"></i></button>
                                     </form>
 

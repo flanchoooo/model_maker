@@ -66,7 +66,6 @@
 
 
 
-
     <script>
         $(document).ready(function() {
 
@@ -104,114 +103,116 @@
 
     <header class="main-header">
 
-        <!-- Logo -->
-        <a href="{{'home'}}" class="logo" style="position: fixed; padding-bottom: 70px; padding-top: 12px">
-            <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"></span>
-            <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">
-                <div class="brand">
-                    <h3>ModelMkr</h3>
-                </div>
-            </span>
-        </a>
 
 
-
-        <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top"  style="padding-bottom:20px; padding-top: 5px">
-            <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                <span class="sr-only">Toggle navigation</span>
-            </a>
-            <!-- Navbar Right Menu -->
-
-
-            <ul class="pull-right">
-
-                <ul class="nav navbar-nav">
-                    <li class="dropdown user user-menu"><a style="font-family: OmnesBold; font-size: 115%" class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out">
-
-                            </i>Sign Out</a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    </li>
-
-
-
-                </ul>
-            </ul>
-        </nav>
-
-    </header>
-    <!-- Left side column. contains the logo and sidebar -->
-    <aside class="main-sidebar" >
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-            <!-- Sidebar user panel -->
-
-            <br>
-
-            <div class="user-panel">
-                <div class="pull-left image">
-
-                </div>
-
-            </div>
-            <ul class="sidebar-menu" data-widget="tree">
-
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-laptop"></i>
-                        <span>Model</span>
-                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                    </a>
-
-                    <ul class="treeview-menu">
-                        <li><a href="{{'companies'}}"><i class="fa fa-circle-o"></i> Models</a></li>
-                        <li><a href="{{'inputs'}}"><i class="fa fa-circle-o"></i> Project Inputs</a></li>
-                        <li><a href="{{'expense'}}"><i class="fa fa-circle-o"></i> Project Expenses</a></li>
-                        <li><a href="{{'businesses'}}"><i class="fa fa-circle-o"></i>Model Computation</a></li>
-                        <li><a href="{{'charts'}}"><i class="fa fa-circle-o"></i>Charts</a></li>
-
-                    </ul>
-
-
-
-                </li>
-
-            </ul>
-        </section>
-        <!-- /.sidebar -->
-    </aside>
-
-
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Main content -->
-        <section class="content">
-            @yield('content')
-        </section>
-        <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
-    <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-            <b>Version</b> 2.4.0
+<!-- Logo -->
+<a href="{{'home'}}" class="logo" style="position: fixed; padding-bottom: 70px; padding-top: 12px">
+    <!-- mini logo for sidebar mini 50x50 pixels -->
+    <span class="logo-mini"></span>
+    <!-- logo for regular state and mobile devices -->
+    <span class="logo-lg">
+        <div class="brand">
+            <h3>ModelMkr</h3>
         </div>
-        <strong>Copyright &copy; 2018 <a href="https://adminlte.io">Model Maker</a>.</strong> All rights
-        reserved.
-    </footer>
+    </span>
+</a>
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
 
-    </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
-    <div class="control-sidebar-bg"></div>
+
+<!-- Header Navbar: style can be found in header.less -->
+<nav class="navbar navbar-static-top"  style="padding-bottom:20px; padding-top: 5px">
+    <!-- Sidebar toggle button-->
+    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+    </a>
+    <!-- Navbar Right Menu -->
+
+
+    <ul class="pull-right">
+
+        <ul class="nav navbar-nav">
+            <li class="dropdown user user-menu"><a style="font-family: OmnesBold; font-size: 115%" class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out">
+
+                    </i>Sign Out</a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            </li>
+
+
+
+        </ul>
+    </ul>
+</nav>
+
+</header>
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar" >
+<!-- sidebar: style can be found in sidebar.less -->
+<section class="sidebar">
+    <!-- Sidebar user panel -->
+
+    <br>
+
+    <div class="user-panel">
+        <div class="pull-left image">
+
+        </div>
+
+    </div>
+    <ul class="sidebar-menu" data-widget="tree">
+
+        <li class="treeview">
+            <a href="#">
+                <i class="fa fa-laptop"></i>
+                <span>Model</span>
+                <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+            </a>
+
+            <ul class="treeview-menu">
+                <li><a href="{{'companies'}}"><i class="fa fa-circle-o"></i> Models</a></li>
+                <li><a href="{{'inputs'}}"><i class="fa fa-circle-o"></i> Project Inputs</a></li>
+                <li><a href="{{'expense'}}"><i class="fa fa-circle-o"></i> Project Expenses</a></li>
+                <li><a href="{{'businesses'}}"><i class="fa fa-circle-o"></i>Model Computation</a></li>
+                <li><a href="{{'chart'}}"><i class="fa fa-circle-o"></i>Charts</a></li>
+
+            </ul>
+
+
+
+        </li>
+
+    </ul>
+</section>
+<!-- /.sidebar -->
+</aside>
+
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+<!-- Main content -->
+<section class="content">
+    @yield('content')
+</section>
+<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+<footer class="main-footer">
+<div class="pull-right hidden-xs">
+    <b>Version</b> 2.4.0
+</div>
+<strong>Copyright &copy; 2018 <a href="https://adminlte.io">Model Maker</a>.</strong> All rights
+reserved.
+</footer>
+
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+
+</aside>
+<!-- /.control-sidebar -->
+<!-- Add the sidebar's background. This div must be placed
+ immediately after the control sidebar -->
+<div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
 <!-- Bootstrap 3.3.7 -->
@@ -244,44 +245,44 @@
 
 
 <script>
-    $(function () {
+$(function () {
 
-        //Date range picker
-        $('#reservation').daterangepicker()
-        //Date range picker with time picker
-        $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'YYYY/MM/DD h:mm A' })
+//Date range picker
+$('#reservation').daterangepicker()
+//Date range picker with time picker
+$('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'YYYY/MM/DD h:mm A' })
 
-        //Date range as a button
-        $('#daterange-btn').daterangepicker(
-            {
-                ranges   : {
-                    'Today'       : [moment(), moment()],
-                    'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                    'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
-                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                    'This Month'  : [moment().startOf('month'), moment().endOf('month')],
-                    'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-                },
-                startDate: moment().subtract(29, 'days'),
-                endDate  : moment()
-            },
-            function (start, end) {
-                $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
-            }
-        )
+//Date range as a button
+$('#daterange-btn').daterangepicker(
+    {
+        ranges   : {
+            'Today'       : [moment(), moment()],
+            'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month'  : [moment().startOf('month'), moment().endOf('month')],
+            'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        },
+        startDate: moment().subtract(29, 'days'),
+        endDate  : moment()
+    },
+    function (start, end) {
+        $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+    }
+)
 
-        //Date picker
-        $('#datepicker').datepicker({
-            autoclose: true
-        })
+//Date picker
+$('#datepicker').datepicker({
+    autoclose: true
+})
 
-        $('#datepickr').datepicker({
-            autoclose: true
+$('#datepickr').datepicker({
+    autoclose: true
 
-        })
+})
 
 
-    })
+})
 </script>
 </body>
 </html>

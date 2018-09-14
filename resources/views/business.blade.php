@@ -7,6 +7,13 @@
         <div class="col-md-12 col-lg-offset-0">
     <div class="box">
 
+        <div class="box-header">
+            <h3 class="box-title">Project Inputs</h3><br>
+            <br>
+            <a href="{{'inputs'}}"></i>Edit Inputs</a>|| <a href="{{'expense'}}"></i>Edit Expenses</a>
+
+
+        </div>
         <!-- /.box-header -->
         <div class="box-body">
             <table id="example" class="table table-bordered table-striped table-responsive">
@@ -54,7 +61,7 @@
                 <tbody>
 
                 <tr>
-                    <td>a. ZFC</td>
+                    <td>a. Input A</td>
                     <td>{{session('month1')}}</td>
                     <td>{{session('month2')}}</td>
                     <td>{{session('month3')}}</td>
@@ -94,7 +101,7 @@
                 </tr>
 
                 <tr>
-                    <td>b. Ominia</td>
+                    <td>b. Input B</td>
                     <td>{{session('ominia1')}}</td>
                     <td>{{session('ominia2')}}</td>
                     <td>{{session('ominia3')}}</td>
@@ -133,7 +140,7 @@
                     <td class="hidden">{{session('ominia36')}}</td>
                 </tr>
                 <tr>
-                    <td>c. Command Agriculture</td>
+                    <td>c. Input C</td>
                     <td>{{session('command1')}}</td>
                     <td>{{session('command2')}}</td>
                     <td>{{session('command3')}}</td>
@@ -173,7 +180,7 @@
                 </tr>
 
                 <tr>
-                    <td>d. Presidential Input Scheme</td>
+                    <td>d. Input D</td>
                     <td>{{session('pres_input_scheme1')}}</td>
                     <td>{{session('pres_input_scheme2')}}</td>
                     <td>{{session('pres_input_scheme3')}}</td>

@@ -70,7 +70,7 @@ class EditInputController extends Controller
 
         $total_inputs =  request('zfc') +  request('ominia') + request('command') + request('pres_inputs');
         $revenue =  $total_inputs * request('selling_price');
-        Inputs::where('month',request('id'))->update([
+        Inputs::where('id',request('id'))->update([
             "zfc"=> request('zfc'),
             "ominia" =>  request('ominia'),
             "command" => request('command'),

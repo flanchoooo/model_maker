@@ -40,19 +40,19 @@
                             </div>
 
                         <div class="form-group">
-                            <input id="text" type="text" class="form-control" placeholder="ZFC" name="zfc" required>
+                            <input id="text" type="text" class="form-control" placeholder="Input A" name="zfc" required>
                         </div>
 
                         <div class="form-group">
-                            <input id="text" type="text" class="form-control" placeholder="Ominia" name="ominia" required>
+                            <input id="text" type="text" class="form-control" placeholder="Input B" name="ominia" required>
                         </div>
 
                         <div class="form-group">
-                            <input id="text" type="text" class="form-control" placeholder="Command Agriculture" name="command" required>
+                            <input id="text" type="text" class="form-control" placeholder="Input C" name="command" required>
                         </div>
 
                         <div class="form-group">
-                            <input id="text" type="text" class="form-control" placeholder="Presidential Inputs" name="pres_inputs" required>
+                            <input id="text" type="text" class="form-control" placeholder="Input D" name="pres_inputs" required>
                         </div>
 
                         <div class="form-group">

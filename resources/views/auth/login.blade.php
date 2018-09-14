@@ -42,8 +42,8 @@
                 <!-- /.box-body -->
 
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>  <a class="btn btn-link" href="{{ route('password.request') }}">
-                        {{ __('Forgot Your Password?') }}
+                    <button type="submit" class="btn btn-primary">Submit</button>  <a class="btn btn-link" href="{{ route('register') }}">
+                        {{ __(' Not Registered ? ') }}
                     </a>
                 </div>
             </form>
