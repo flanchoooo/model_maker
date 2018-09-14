@@ -26,9 +26,8 @@
                 <form role="form" action="business" method="POST">
                     @csrf
 
-                    @foreach($records as $record)
-                    <div class="box-body">
 
+                    <div class="box-body">
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <select id="text" type="text" class="form-control" placeholder="Company Name" name="company"  required>
@@ -38,11 +37,7 @@
                                 </select>
                             </div>
                         </div>
-
-
-
                         </div>
-                    @endforeach
 
                     <div class="box-footer">
                         <button type="submit" class="btn btn-primary">Submit</button>
